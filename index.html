@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Manuel Cecchin Kuhn — Portfolio</title>
+  <meta name="description" content="Portfolio de Manuel Cecchin Kuhn. Desarrollador de software." />
+  <meta name="theme-color" content="#0b0e13" />
+  <link rel="icon" type="image/png" href="/assets/foto-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="dist/style.css" />
+</head>
+<body>
+  <header class="site-header glass">
+    <nav class="container nav">
+      <a href="#inicio" class="brand">Manuel Cecchin Kuhn<span>.</span></a>
+      <button class="nav__toggle" aria-label="Abrir menú" id="navToggle">☰</button>
+      <ul class="nav__links" id="navLinks">
+        <li><a href="#sobre-mi">Sobre mí</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main id="inicio">
+    <section class="hero">
+      <img class="hero__shape" src="assets/hero-shape.svg" alt="" aria-hidden="true" />
+      <img class="hero__dots" src="assets/hero-dots.svg" alt="" aria-hidden="true" />
+      <div class="container hero__inner">
+        <div class="hero__copy">
+          <p class="eyebrow reveal">¡Hola! Soy</p>
+          <h1 class="hero__title reveal gradient-text">Manuel Cecchin Kuhn</h1>
+          <p class="hero__subtitle reveal"><span id="typewriter" aria-live="polite"></span></p>
+          <div class="hero__cta reveal">
+            <a class="btn btn--primary" href="#contacto">Contactar</a>
+            <a class="btn btn--ghost" href="assets/CV.pdf" download>Descargar CV</a>
+          </div>
+        </div>
+        <div class="hero__card glass reveal">
+          <h3>Resumen</h3>
+          <p>Full Stack Web Developer | Java – Spring Boot – React.js Next.js – MySQL – Firebase</p>
+          <ul class="bullets">
+            <li>En constante aprendizaje</li>
+            <li>Apasionado por la tecnologia ✨</li>
+            <li>Listo para trabajar</li>
+          </ul>
+        </div>
+      </div>
+      <a href="#sobre-mi" class="hero__scroll" aria-label="Saltar a Sobre mí">▼</a>
+    </section>
+
+    <section id="sobre-mi" class="section">
+      <div class="container grid-2col">
+        <div class="reveal">
+          <h2>Sobre mí</h2>
+          <p>Desarrollador Full Stack con formación técnica y orientación al aprendizaje continuo.
+            Título de Auxiliar en Programación (Teclab) y egresado de Full Stack Web Development (Coderhouse).
+            Actualmente curso la Tecnicatura Superior en Programación.
+            Experiencia en proyectos que integran tecnologías modernas de frontend y backend.
+            Motivado por crear aplicaciones web escalables, innovadoras y centradas en el usuario.</p>
+          <div class="tags">
+            <span>JavaScript</span><span>React</span><span>Next.js</span><span>SCSS</span><span>Spring Boot</span><span>MySQL</span><span>MongoDB</span><span>Postman</span>
+            <span>Java</span><span>Phyton</span><span>Openai</span><span>Bootstrap</span><span>Php</span><span>Spring Boot</span><span>API REST</span><span>Scrum</span><span>Comunicacion emocional</span>
+          </div>
+        </div>
+        <div class="card photo reveal">
+          <div class="photo__mask"></div>
+          <img src="assets/Foto.png" alt="Foto de perfil" loading="lazy" />
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="container">
+        <h2 class="reveal">Skills</h2>
+        <div class="cards">
+          <article class="card reveal"><h3>Frontend</h3><p>HTML semántico, JavaScript, SCSS, animaciones, React/Next.js.</p></article>
+          <article class="card reveal"><h3>Backend</h3><p>Java + Spring Boot, JWT, REST, JPA/Hibernate, MySQL.</p></article>
+          <article class="card reveal"><h3>Herramientas</h3><p>Git/GitHub, Postman, Vercel, Pages, CI/CD básico.</p></article>
+          <article class="card reveal"><h3>Base de datos</h3><p>MongoDB/Atlas y MySQL.</p></article>
+          <article class="card reveal"><h3>Softs Skills</h3><p>Scrum, gestion de equipos, resolucion de problemas, adaptabilidad, rapido aprendizaje.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="proyectos" class="section">
+      <div class="container">
+        <h2 class="reveal">Proyectos</h2>
+        <div class="cards cards--grid3">
+          <article class="card project reveal">
+            <h3>E-commerce (Music Speaks)</h3>
+            <p>Catálogo, carrito, filtros server, Firebase.</p>
+            <div class="project__links">
+              <a href="https://music-speaks-furq9j293-manuel-cecchin-kuhns-projects.vercel.app/" class="btn btn--sm" target="_blank" rel="noopener noreferrer">Demo</a>
+              <a href="https://github.com/MckMc/Music-Speaks.git" class="btn btn--sm btn--ghost" target="_blank" rel="noopener noreferrer">Github</a>
+            </div>
+          </article>
+          <article class="card project reveal">
+            <h3>Facturación (Spring Boot)</h3>
+            <p>CRUD, DTOs, PDF, JWT.</p>
+            <div class="project__links">
+              <a href="https://gitlab.com/mckmc1-group/FacturacionEntregaProyectoFinalCecchinKuhn.git" class="btn btn--sm btn--ghost" target="_blank" rel="noopener noreferrer">Gitlab</a>
+            </div>
+          </article>
+          <article class="card project reveal">
+            <h3>Adopción (Adopt Me)</h3>
+            <p>SSR, imágenes optimizadas, admin.</p>
+            <div class="project__links">
+              <a href="https://github.com/MckMc/AdoptMe.git" class="btn btn--sm btn--ghost" target="_blank" rel="noopener noreferrer">Github</a>
+            </div>
+          </article>
+          <article class="card project reveal">
+            <h3>Aplicacion web (Tattink)</h3>
+            <p>SASS, Javascript, API's, Bootstrap.</p>
+            <div class="project__links">
+              <a href="https://mckmc.github.io/Tattink./" class="btn btn--sm" target="_blank" rel="noopener noreferrer">Demo</a>
+              <a href="https://github.com/MckMc/Tattink..git" class="btn btn--sm btn--ghost" target="_blank" rel="noopener noreferrer">Github</a>
+            </div>
+          </article>
+          <article class="card project reveal">
+            <h3>Aplicacion web con IA (Chau Bloqueo)</h3>
+            <p>Phyton, Openai.</p>
+            <div class="project__links">
+              <a href="https://chau-bloqueo-gbji3p7yjpcjgd4xmte4fb.streamlit.app/" class="btn btn--sm" target="_blank" rel="noopener noreferrer">Demo</a>
+              <a href="https://github.com/MckMc/Chau-Bloqueo.git" class="btn btn--sm btn--ghost" target="_blank" rel="noopener noreferrer">Github</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section id="contacto" class="section">
+      <div class="container grid-2col">
+        <div class="card contact reveal">
+          <h3>Contacto</h3>
+          <ul class="contact__list">
+            <li>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6.5V18a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6.5l8 5 8-5z"/></svg>
+              <a href="mailto:manuck.developer@gmail.com">manuck.developer@gmail.com</a>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2c1.12.37 2.33.57 3.58.57V21C10.07 22 2 13.93 2 3h3.5c0 1.25.2 2.46.57 3.58z"/></svg>
+              <a href="tel:+543435038718">+54 343 5038718</a>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M17.5 6.5a7 7 0 0 0-12.1 6.7l-1 3.6l3.7-1a7 7 0 0 0 9.4-9.3zm-5.4 9.4a6 6 0 0 1-3-.8l-.2-.1l-2.2.6l.6-2.1l-.1-.2a6 6 0 1 1 4.9 2.6zM9.6 8.9c.1-.2.2-.2.3-.2h.2c.1 0 .2 0 .3.2s.5.7.5.8s.1.2 0 .3c0 .1-.2.3-.3.4c-.1.1-.2.2-.1.3c.1.1.3.6.7 1c.5.5 1 .7 1.1.8c.1 0 .2 0 .3-.1l.4-.5c.1-.1.2-.1.3 0c.1 0 .8.3.9.4s.2.1.2.2s.2.5.1.9c-.1.4-.8.8-1.1.8c-.3.1-.6.1-1-.1a6.3 6.3 0 0 1-2.7-1.7a5.1 5.1 0 0 1-1.1-1.7c-.1-.4 0-.8.1-1c.2-.3.6-.7.7-.8z"/>
+              </svg>
+              <a href="https://wa.me/5493435038718?text=Hola%20Manuel%2C%20vengo%20de%20tu%20web"
+                target="_blank" rel="noopener">WhatsApp
+              </a>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="7" r="2"/><path d="M12 10a5.5 5.5 0 0 0-5.5 5.5h11A5.5 5.5 0 0 0 12 10z"/></svg>
+              <a href="linkedin.com/in/manuck-developer">LinkedIn</a>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/></svg>
+              <a href="github.com/MckMc">GitHub</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer__inner">
+      <p>© <span id="year"></span> Manuel Cecchin Kuhn</p>
+      <ul class="social">
+        <li><a href="linkedin.com/in/manuck-developer">LinkedIn</a></li>
+        <li><a href="mailto:manuck.developer@gmail.com">Email</a></li>
+        <li><a href="tel:+543435038718">Teléfono</a></li>
+        <li>
+  <a href="https://wa.me/5493435038718" target="_blank" rel="noopener">WhatsApp</a></li>
+        <li><a href="github.com/MckMc">GitHub</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="src/js/app.js"></script>
+</body>
+</html>
